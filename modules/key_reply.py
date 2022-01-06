@@ -36,6 +36,9 @@ async def _(app: Ariadne, msg: MessageChain, member: Member, group: Group):
             await quick_reply('"公子，嘿嘿🤤我的公子（不他"')
         elif "是谁" in textmsg:
             await quick_reply("不知道(直答")
+        elif textmsg == "鬼鬼生命周期结束" and member.id == 2544704967:
+            await quick_reply("好!")
+            await app.stop()
     if msg.has(At):
         at = msg.getFirst(At).target
         if at == 2595201156:
