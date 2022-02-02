@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "deadghost"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+graia-ariadne-dev = "^2022.1.11"
+motor = "^2.5.1"
+graia-scheduler = "^0.0.6"
+graia-saya = "^0.0.14"
+httpx = "^0.22.0"
+pillow = "^9.0.0"
+ujson = "^5.1.0"
+aiofiles = "^0.8.0"
+graia-broadcast = "0.14.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tencent-cloud"
+default = true
+url = "https://mirrors.cloud.tencent.com/pypi/simple"
